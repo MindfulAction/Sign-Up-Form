@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Nordic";
+    src: url(../assets/fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/imgs/jonatan-pie-EvKBHBGgaUo-unsplash.jpg);
+    background-size: 125% 100%;
+    width: 80%;
+    margin: 0;
+}
+
+#wolf {
+    width: 7rem;
+    height: 7rem;
+}
+
+.sidebar > div {
+    display: flex;
+}
+
+#sidebar-content {
+    display: flex;
+    position: relative;
+    bottom: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 90%;
+    padding: 1rem;
+}
+
+#sidebar-content .text {
+    color: rgba(41,42,44,255);
+    font-family: "Nordic";
+    font-size: 5rem;
+}
+
+#pic-cred {
+    position: absolute;
+    top: 100%;
+    color: white;
+    font-size: .75rem;
+}
+
+a {
+    font-size: .75rem;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 2rem; */
+    /* margin: 1rem; */
+}
+
+#top-sect, #bot-sect {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.input-pair {
+    display: flex;
+}
+
+.input-pair > div {
+    margin: 0.5rem;
+}
+
+label div {
+    font-size: .75rem;
+}
+
+button {
+    margin: 0.5rem;
+    height: 2rem;
+    width: 10rem;
+    background-color: #278157;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+input:focus {
+    border: 3px solid blue;
+    box-shadow: 4px 2px 2px lightgray;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+p a {
+    color: #278157;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form {
+    box-shadow: 2px 2px 2px black;
+    width: 100%;
+}
+
+#bot-sect {
+    height: 100%;
+}
+
+#top-sect, #bot-sect, form {
+    padding: 1rem;
+}
+
+#top-sect {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+#top-sect p {
+    width: 80%;
+}
