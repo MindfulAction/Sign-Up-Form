@@ -18,7 +18,5 @@ const checkIfPasswordsMatch = () => {
 
 }
 
-let submit = document.querySelector("button");
-submit.addEventListener("click", checkIfPasswordsMatch);
 
 let passwordErrorMsg = document.createElement("p");
