@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript.js" defer></script>
 </head>
 <body>
 
@@ -30,7 +31,7 @@
             <p>You <i>know</i> you want to.</p>
 
         </div>
-        <form action="">
+        <form id="form" action="" onsubmit="return(checkIfPasswordsMatch())">
             <h1>Let's do this!</h1>
 
             <div>
@@ -59,11 +60,11 @@
                 <div class="input-pair">
                     <div>
                         <label for="pwd"><div>PASSWORD</div></label>
-                        <input type="password" name="password" id="pwd">
+                        <input type="password" name="password" id="pwd" required>
                     </div>
                     <div>
                         <label for="confpwd"><div>CONFIRM PASSWORD</div></label>
-                        <input type="password" name="confirm_password" id="confpwd">
+                        <input type="password" name="confirm_password" id="confpwd" required>
                     </div>
                 </div>
 
@@ -72,7 +73,7 @@
         </form>
 
         <div id="bot-sect">
-            <button>Create Account</button>
+            <button form="form">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
